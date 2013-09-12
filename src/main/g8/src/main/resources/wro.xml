@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<groups xmlns="http://www.isdc.ro/wro">
+
+  <group name="raw">
+	<group-ref>www</group-ref>
+  </group>
+
+  <group name="www">
+    <js>classpath:coffeescript/**.coffee</js>
+    <css>classpath:sass/mixins/*.sass</css>
+    <css>classpath:sass/*.sass</css>
+  </group>
+
+  <group name="all">
+    <js>classpath:lib/angular-1.0.7/angular.js</js>
+    <js>classpath:lib/angular-1.0.7/angular-resource.js</js>
+    <js>classpath:lib/angular-1.0.7/angular-bootstrap.js</js>
+    <js>classpath:lib/angular-1.0.7/angular-cookies.js</js>
+    <js>classpath:lib/ui-bootstrap/*.js</js>
+    <css>classpath:lib/bootstrap/css/bootstrap.css</css>
+  </group>
+
+  <group name="admin">
+    <css>classpath:legacy/css/grid.css</css>
+    <css>classpath:legacy/css/admin.css</css>
+  </group>
+
+  <group name="bourbon" abstract="true">
+
+	<css>classpath:lib/bourbon/_bourbon-deprecated-upcoming.sass</css>
+
+    <!--Custom Functions-->
+    <css>classpath:lib/bourbon/functions/_flex-grid.sass</css>
+    <css>classpath:lib/bourbon/functions/_grid-width.sass</css>
+    <css>classpath:lib/bourbon/functions/_linear-gradient.sass</css>
+    <css>classpath:lib/bourbon/functions/_modular-scale.sass</css>
+    <css>classpath:lib/bourbon/functions/_radial-gradient.sass</css>
+    <css>classpath:lib/bourbon/functions/_tint-shade.sass</css>
+	<css>classpath:lib/bourbon/functions/_transition-property-name.sass</css>
+
+	<!--CSS3 Mixins-->
+    <css>classpath:lib/bourbon/css3/_animation.sass</css>
+    <css>classpath:lib/bourbon/css3/_appearance.sass</css>
+    <css>classpath:lib/bourbon/css3/_background-image.sass</css>
+    <css>classpath:lib/bourbon/css3/_border-image.sass</css>
+    <css>classpath:lib/bourbon/css3/_border-radius.sass</css>
+    <css>classpath:lib/bourbon/css3/_box-sizing.sass</css>
+    <css>classpath:lib/bourbon/css3/_columns.sass</css>
+    <css>classpath:lib/bourbon/css3/_flex-box.sass</css>
+    <css>classpath:lib/bourbon/css3/_font-face.sass</css>
+    <css>classpath:lib/bourbon/css3/_inline-block.sass</css>
+    <css>classpath:lib/bourbon/css3/_linear-gradient.sass</css>
+    <css>classpath:lib/bourbon/css3/_radial-gradient.sass</css>
+    <css>classpath:lib/bourbon/css3/_transform.sass</css>
+    <css>classpath:lib/bourbon/css3/_transition.sass</css>
+    <css>classpath:lib/bourbon/css3/_user-select.sass</css>
+
+	<!--Addons & other mixins-->
+    <css>classpath:lib/bourbon/addons/_button.sass</css>
+    <css>classpath:lib/bourbon/addons/_clearfix.sass</css>
+    <css>classpath:lib/bourbon/addons/_font-family.sass</css>
+    <css>classpath:lib/bourbon/addons/_hide-text.sass</css>
+    <css>classpath:lib/bourbon/addons/_html5-input-types.sass</css>
+    <css>classpath:lib/bourbon/addons/_position.sass</css>
+    <css>classpath:lib/bourbon/addons/_prefixer.sass</css>
+    <css>classpath:lib/bourbon/addons/_timing-functions.sass</css>
+  </group>
+
+</groups>
